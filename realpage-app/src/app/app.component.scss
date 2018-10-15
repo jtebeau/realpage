@@ -1,0 +1,50 @@
+header {
+  .logo-text {
+    font-size: 14px;
+    color: #6f7579;
+    font-style: italic;
+    margin-left: 16px;
+  }
+  #logo {
+    border: 2px solid #fff;
+    box-shadow: inset 0 1.5px 3px 0 rgba(0,0,0,.15), 0 1.5px 3px 0 rgba(0,0,0,.15);
+    border-radius: 49.9%;
+    width: 50px;
+  }
+}
+.card-deck {
+  .card {
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.3s ease-in-out;
+    & .btn-primary {
+      position: absolute;
+      color: #fff;
+      background-color: #007bff;
+      border-color: #007bff;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-radius: 0;
+      width: 100%;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      box-shadow: -1px 1px 28px rgb(188, 227, 255);
+      transition: opacity 0.3s ease-in-out;
+    }
+    &:hover {
+      -webkit-transform: scale(1.05, 1.05);
+      transform: scale(1.05, 1.05);
+      z-index:9999;
+    }
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+}
