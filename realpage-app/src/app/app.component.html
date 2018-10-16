@@ -57,8 +57,9 @@
       </div>
     </div>
     <blockquote class="blockquote text-center">
-      <p class="mb-0">"The ones that are crazy enough to think that they can change the world, are the ones who do."</p>
-      <cite title="Steve Jobs">- Steve Jobs</cite>
+      <p class="mb-0">"{{ quote }}"</p>
+      <cite title="Steve Jobs">- {{ author }}</cite>
+      <button ng-click="newQuote(); newAuthor();" class="button"></button>"
     </blockquote>
   </div>
 </section>
